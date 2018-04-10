@@ -5,6 +5,9 @@ de 5
 =end
 def multiples_3_and_5()
   sum = 0
+  # si le nombre en boucle est un multiple de 3 et de
+  # 5, alors on les ajoute à la somme et l'on répète cette
+  # action 1000 fois. 
   1000.times do |i|
     if i % 5 == 0 || i % 3 == 0
        sum+=i
