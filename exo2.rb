@@ -22,9 +22,11 @@ string.each_byte do |byte|
   elsif byte >= 65 && byte <= 90
     decalage = ((byte+position-65)%26)+65
     position_finale += decalage.chr
+  else
+    position_finale += byte.chr
   end
 end
-puts position_finale
+print position_finale
 
 end
 
